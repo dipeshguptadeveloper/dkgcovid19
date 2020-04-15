@@ -58,7 +58,7 @@
         <div class="mb-3">
             <h3 class="text-uppercase text-center">Covid-19 Updates</h3>
         </div>
-        <div class="d-flex justify-content-around align-items-center">
+        <div class="d-flex justify-content-around align-items-center mt-5">
             <div>
                 <h1 class="count">15,24,266</h1>
                 <p>Passengers screened at airport</p>
@@ -92,6 +92,8 @@
             </div>
         </div>
     </div>
+    
+    <!-- ************************ cornona symptoms ******************** -->
     <div class="container-fluid pt-5 pb-5" id="aboutid">
         <div class="section_header text-center mt-4 mb-5">
             <h1>CoronaVirus Symptoms</h1>
