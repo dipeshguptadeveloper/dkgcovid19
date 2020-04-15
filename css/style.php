@@ -97,6 +97,12 @@
 {
     font-size: 2rem;
     text-align: center;
+
+}
+
+.sub_section
+{
+    background-color: #fbfafd;
     
 }
 
