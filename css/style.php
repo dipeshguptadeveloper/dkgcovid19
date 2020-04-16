@@ -20,7 +20,7 @@ html{
 
 .nav_style
 {
-    background-color: #a29bfe!important;
+    background-color: #E5A60A!important;
 
 }
 
