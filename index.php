@@ -23,16 +23,16 @@
                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" href="#aboutid">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Symptoms</a>
+                    <a class="nav-link" href="#sympid">Symptoms</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Prevention</a>
+                    <a class="nav-link" href="#preventid">Prevention</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="#contactid">Contact</a>
                 </li>
             </ul>
         </div>
@@ -92,9 +92,9 @@
             </div>
         </div>
     </div>
-    
+
     <!-- ************************ cornona symptoms ******************** -->
-    <div class="container-fluid pt-5 pb-5" id="aboutid">
+    <div class="container-fluid pt-5 pb-5" id="sympid">
         <div class="section_header text-center mt-4 mb-5">
             <h1>CoronaVirus Symptoms</h1>
         </div>
@@ -138,9 +138,220 @@
                 </div>
             </div>
         </div>
-
-
     </div>
-</body>
+    <!-- ************************ prevention against cornona ************************* -->
+    <div class="container-fluid sub_section pt-5 pb-5" id="preventid">
+        <div class="section_header text-center mt-4 mb-5">
+            <h1>6 Steps Prevention Against CoronaVirus</h1>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-12 mt-5">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-12">
+                            <figure class="text-center">
+                                <img src="images/handwash.png" class="img-fluid" width="90" height="90" alt="">
+                            </figure>
+                        </div>
+                        <div class="col-lg-8 col-md-8 col-12">
+                            <p>Wash your hands regularly for 20 seconds, with soap and water or alcohol-based hand rub.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-12 mt-5">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-12">
+                            <figure class="text-center">
+                                <img src="images/patient.png" class="img-fluid" width="90" height="90" alt="">
+                            </figure>
+                        </div>
+                        <div class="col-lg-8 col-md-8 col-12">
+                            <p>Cover your nose and mouth with a disposable tissue or flexed elbow when you cough or sneeze.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-12 mt-5">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-12">
+                            <figure class="text-center">
+                                <img src="images/quarantine.png" class="img-fluid" width="90" height="90" alt="">
+                            </figure>
+                        </div>
+                        <div class="col-lg-8 col-md-8 col-12">
+                            <p>Avoid close contact(1 meter or 3 feet) with people who are unwell.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-12 mt-5">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-12">
+                            <figure class="text-center">
+                                <img src="images/stay-home.png" class="img-fluid" width="90" height="90" alt="">
+                            </figure>
+                        </div>
+                        <div class="col-lg-8 col-md-8 col-12">
+                            <p>Stay home and self-isolate from others in the household, if you feel unwell.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-12 mt-5">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-12">
+                            <figure class="text-center">
+                                <img src="images/news.png" class="img-fluid" width="90" height="90" alt="">
+                            </figure>
+                        </div>
+                        <div class="col-lg-8 col-md-8 col-12">
+                            <p>Stay informed by watching news & follow the recommended practices.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-12 mt-5">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-12">
+                            <figure class="text-center">
+                                <img src="images/fever1.png" class="img-fluid" width="90" height="90" alt="">
+                            </figure>
+                        </div>
+                        <div class="col-lg-8 col-md-8 col-12">
+                            <p>If you have fever, cough and difficulty in breathing, seek medical care early.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ************************ contact us ************************* -->
+    <div class="container-fluid pt-5 pb-5" id="contactid">
+        <div class="section_header text-center mt-4 mb-5">
+            <h1>Contact-Us</h1>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2 col-12">
+                    <form action="" method="POST">
+                        <div class="form-group">
+                            <label>Name</label>
+                            <input type="text" class="form-control" name="username" placeholder="name" autocomplete="off" required autocomplete="off">
+                        </div>
+                        <div class="form-group">
+                            <labe>Email address</labe>
+                            <input type="email" class="form-control" name="email" placeholder="name@example.com" required autocomplete="off">
+                        </div>
+                        <div class="form-group">
+                            <label>Mobile No.</label>
+                            <input type="number" class="form-control" name="mobile" placeholder="mobile" autocomplete="off" required autocomplete="off">
+                        </div>
+                        <div class="form-group">
+                            <label>Select symptoms</label> <br>
+                            <div class="custom-control custom-checkbox custom-control-inline text-capitalize">
+                                <input type="checkbox" class="custom-control-input" id="customcheckbox1" name="coronasym[]" value="cold">
+                                <label for="customcheckbox1" class="custom-control-label">Cold</label>
+                            </div>
+                            <div class="custom-control custom-checkbox custom-control-inline text-capitalize">
+                                <input type="checkbox" class="custom-control-input" id="customcheckbox2" name="coronasym[]" value="fever">
+                                <label for="customcheckbox2" class="custom-control-label">Fever</label>
+                            </div>
+                            <div class="custom-control custom-checkbox custom-control-inline text-capitalize">
+                                <input type="checkbox" class="custom-control-input" id="customcheckbox3" name="coronasym[]" value="breathing">
+                                <label for="customcheckbox3" class="custom-control-label">Breathing Difficulty</label>
+                            </div>
+                            <div class="custom-control custom-checkbox custom-control-inline text-capitalize">
+                                <input type="checkbox" class="custom-control-input" id="customcheckbox4" name="coronasym[]" value="cough">
+                                <label for="customcheckbox4" class="custom-control-label">Cough</label>
+                            </div>
+                            <div class="custom-control custom-checkbox custom-control-inline text-capitalize">
+                                <input type="checkbox" class="custom-control-input" id="customcheckbox5" name="coronasym[]" value="week">
+                                <label for="customcheckbox5" class="custom-control-label">Feeling Week</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Description</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="msg"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" name="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- ************************ top cursor ************************* -->
+<div class="container scrolltop float-right pr-5">
+    <i class="fa fa-arrow-up" onclick="topFunction()" id="myBTN"></i>
+</div>
 
+
+
+<!-- ************************ footer ************************* -->    
+    <footer class="mt-5">
+        <div class="footer_style text-center text-white container-fluid">
+            <p>copyright by D Company</p>
+        </div> 
+    </footer>
+ <script type="text/javascript">
+
+    $('.count').counterUp({
+        delay:10,
+        time:3000
+    })
+
+    mybutton = document.getElementById("myBTN");
+    window.onscroll = function() {scrollFunction()};
+    function scrollFunction(){
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100){
+            mybutton.style.display = "block";
+        }
+        else {
+            mybutton.style.display = "none";
+        }
+    }
+
+    function topFunction(){
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+
+</script>
+</body>
 </html>
+
+<?php
+
+    include 'dbcon.php';
+
+    if(isset($_POST['submit']))
+    {
+        $username = $_POST['username'];
+        $email = $_POST['email'];
+        $mobile = $_POST['mobile'];
+        $symp = $_POST['coronasym'];
+        $msg = $_POST['msg'];
+
+        $chk = "";
+
+        foreach($symp as $chk1){
+            $chk .= $chk1.",";
+        }
+
+        $insertquery = " insert into coronacase(username, email, mobile, symp, message) values('$username', '$email', '$mobile', '$chk', '$msg') ";
+
+        $query = mysqli_query($con, $insertquery);
+
+        if($query){
+            ?>
+            <script>
+                alert("Inserted successful");
+            </script>
+            <?php
+        }
+        else {
+            ?>
+            <script>
+                alert("Not inserted");
+            </script>
+            <?php
+        }
+    }
+
+
+?>

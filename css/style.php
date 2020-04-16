@@ -1,4 +1,8 @@
 <style type="text/css">
+
+html{
+    scroll-behavior: smooth;
+}
 *
 {
     margin: 0;
@@ -6,6 +10,12 @@
     box-sizing: border-box;
     font-family: 'Muli', sans-serif;
 
+}
+
+.row{
+    margin-left: 0;
+    margin-right: 0;
+    
 }
 
 .nav_style
@@ -138,6 +148,60 @@ figure img:hover
         transform: scale(.75);
     }
 }
+
+
+
+.footer_style
+{
+    background-color: #a29bfe;
+}
+
+.footer_style p
+{
+    margin-bottom: 0!important;
+
+}
+
+
+#myBTN
+{
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 40px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #00a8ff;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#myBTN:hover
+{
+    background: #606060;
+}
+
+
+
+@media(max-width:768px){
+    .main_header{
+        height: 700px;
+        text-align: center;
+
+    }
+
+    .main_header h1{
+        text-align: center;
+        padding: 0;
+        width: 100%;
+        font-size: 34px;
+    }
+}
+
+
 
 </style>
 
