@@ -58,26 +58,26 @@
         <div class="mb-3">
             <h3 class="text-uppercase text-center">Covid-19 Updates</h3>
         </div>
-        <div class="d-flex justify-content-around align-items-center mt-5">
+        <div class="d-flex justify-content-around align-items-center mt-2">
             <div>
-                <h1 class="count">15,24,266</h1>
+                <h1 class="count">20,91,052</h1>
                 <p>Passengers screened at airport</p>
             </div>
             <div>
-                <h1 class="count">512</h1>
+                <h1 class="count">14,39,150</h1>
                 <p>Active COVID-19 cases*</p>
             </div>
             <div>
-                <h1 class="count">40</h1>
+                <h1 class="count">5,16,675</h1>
                 <p>Cured/Discharge cases*</p>
             </div>
             <div>
-                <h1 class="count">9</h1>
+                <h1 class="count">1,35,227</h1>
                 <p>Death cases*</p>
             </div>
         </div>
     </section>
-    .<div class="container-fluid sub_section pt-5 pb-5" id="aboutid">
+    .<div class="container-fluid sub_section pt-5 pb-5" width="100vw" id="aboutid">
         <div class="section_header text-center mt-4 mb-5">
             <h1>About COVID-19 </h1>
         </div>
