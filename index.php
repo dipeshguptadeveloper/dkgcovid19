@@ -283,7 +283,7 @@
 <!-- ************************ footer ************************* -->    
     <footer class="mt-5">
         <div class="footer_style text-center text-white container-fluid">
-            <p>copyright by D Company</p>
+            <p>&copy copyright by Dipesh Kumar Gupta</p>
         </div> 
     </footer>
  <script type="text/javascript">
