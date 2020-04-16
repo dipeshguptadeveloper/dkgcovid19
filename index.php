@@ -10,7 +10,7 @@
 
 </head>
 
-<body>
+<body onload="fetch()">
     <nav class="navbar navbar-expand-lg nav_style p-3">
         <a class="navbar-brand pl-5" href="#">COVID-19</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -54,28 +54,26 @@
 
     <!-- ************************ cornona lastest update ******************** -->
 
-    <section class="corona_update">
-        <div class="mb-3">
-            <h3 class="text-uppercase text-center">Covid-19 Updates</h3>
+    <section class="corona_update container-fluid">
+        <div class="mb-5">
+            <h3 class="text-uppercase text-center">Covid-19 Live Updates Of World</h3>
         </div>
-        <div class="d-flex justify-content-around align-items-center mt-2">
-            <div>
-                <h1 class="count">20,91,052</h1>
-                <p>Passengers screened at airport</p>
-            </div>
-            <div>
-                <h1 class="count">14,39,150</h1>
-                <p>Active COVID-19 cases*</p>
-            </div>
-            <div>
-                <h1 class="count">5,16,675</h1>
-                <p>Cured/Discharge cases*</p>
-            </div>
-            <div>
-                <h1 class="count">1,35,227</h1>
-                <p>Death cases*</p>
-            </div>
-        </div>
+       <div class="table-responsive">
+            <table class="table table-bordered table-striped text-center" id="tbval">
+                <tr>
+                    <th>Country</th>
+                    <th>Total Confirmed</th>
+                    <th>Total Recovered</th>
+                    <th>Total Deaths</th>
+                    <th>New Confirmed</th>
+                    <th>New Recovered</th>
+                    <th>New Deaths</th>
+                </tr>
+            </table>
+
+
+
+       </div>
     </section>
     .<div class="container-fluid sub_section pt-5 pb-5" width="100vw" id="aboutid">
         <div class="section_header text-center mt-4 mb-5">
@@ -310,6 +308,63 @@
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
     }
+
+    function fetch(){
+        $.get("https://api.covid19api.com/summary",
+
+            function(data){
+                // console.log(data['Countries'].length)
+                var tbval = document.getElementById('tbval');
+
+                for(var i=1; i<(data['Countries'].length); i++){
+                    var x = tbval.insertRow();
+                    x.insertCell(0);
+
+                    tbval.rows[i].cells[0].innerHTML = data['Countries'][i-1]['Country'];
+                    tbval.rows[i].cells[0].style.background = '#7a4a91';
+                    tbval.rows[i].cells[0].style.color = '#fff';
+
+                    x.insertCell(1);
+
+                    tbval.rows[i].cells[1].innerHTML = data['Countries'][i-1]['TotalConfirmed'];
+                    tbval.rows[i].cells[1].style.background = '#4bb7d8';
+                    
+
+                    x.insertCell(2);
+
+                    tbval.rows[i].cells[2].innerHTML = data['Countries'][i-1]['TotalRecovered'];
+                    tbval.rows[i].cells[2].style.background = '#7EFF5E';
+                    
+
+                    x.insertCell(3);
+
+                    tbval.rows[i].cells[3].innerHTML = data['Countries'][i-1]['TotalDeaths'];
+                    tbval.rows[i].cells[3].style.background = '#E1931C';
+                    
+
+                    x.insertCell(4);
+
+                    tbval.rows[i].cells[4].innerHTML = data['Countries'][i-1]['NewConfirmed'];
+                    tbval.rows[i].cells[4].style.background = '#28AAFF';
+                   
+
+                    x.insertCell(5);
+
+                    tbval.rows[i].cells[5].innerHTML = data['Countries'][i-1]['NewRecovered'];
+                    tbval.rows[i].cells[5].style.background = '#46FF00';
+                    
+
+                    x.insertCell(6);
+
+                    tbval.rows[i].cells[6].innerHTML = data['Countries'][i-1]['NewDeaths'];
+                    tbval.rows[i].cells[6].style.background = '#FF2828';
+                    
+                }
+            }
+        );
+    }
+
+
 
 </script>
 </body>
