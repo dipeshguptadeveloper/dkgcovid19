@@ -10,7 +10,7 @@ $con = mysqli_connect($server, $user, $password, $db);
 if($con){
     ?>
     <script>
-        alert("Welcome to D Company");
+        alert("Connection success");
     </script>
     <?php
 }
